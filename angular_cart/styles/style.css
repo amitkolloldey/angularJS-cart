@@ -1,0 +1,128 @@
+.logo.text-center {
+    border: 4px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px 0 50px;
+    padding: 25px;
+    transition: all 0.1s ease .1s;
+}
+header.header-area {
+    text-align: center;
+}
+.logo img {
+    width: 150px;
+}
+.logo:hover {
+    border-color: #05afef;
+    border-radius: 5% !important; 
+    transition: all 0.2s ease 0.1s;
+} 
+.header-area ul li {
+    display: inline-block;
+}
+.header-area ul {
+    margin: 0;
+    padding: 0;
+}
+.header-area ul li a {
+    color: #05afef;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.1s ease 0.1s;
+}
+.header-area ul li {
+    display: inline-block;
+}
+.header-area ul li a:hover, .header-area ul li.active a {
+    background: #05afef none repeat scroll 0 0;
+    color: #fff;
+    transition: all 0.1s ease 0s;
+}
+.search_form input {
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+.single_product > img {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid transparent ;;
+    height: 300px;
+    max-width: 100%;
+    transition: all 0.2s ease 0.2s;
+    width: 100%;
+}
+.single_product > img:hover {
+    backface-visibility: hidden;
+    background: transparent none repeat scroll 0 0;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    cursor: crosshair;
+    transform: scale(1.1);
+    transition: all 0.2s ease 0.2s;
+    padding: 5px;
+    background: #fff
+}
+
+.single_product {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 50px;
+  position: relative;
+  text-align: center;
+}
+.single_product .collapse,.single_product .collapsing{
+  background: #fff none repeat scroll 0 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease 0.2s;
+}
+section.products_area {
+    padding: 50px 0;
+} 
+.products_area .container {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.single_product h2 {
+    border-bottom: 1px solid #ddd;
+    color: #444;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.single_product p { 
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 0;
+    text-align: left;
+}
+.single_product > a {
+    background: #05afef none repeat scroll 0 0;
+    border-radius: 5px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    margin: 10px 20px;
+    padding: 10px 5px;
+    transition: all 0.5s ease 0.1s;
+    cursor: pointer;
+}
+.single_product > a:hover {
+    background: #3c9dd0 none repeat scroll 0 0;
+    text-decoration: none;
+}
+.single_product .collapse, .single_product .collapsing {
+  background: #05afef none repeat scroll 0 0;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s ease 0.2s;
+} 
+.cart_text p {
+  font-size: 20px;
+}

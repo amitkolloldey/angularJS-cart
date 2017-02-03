@@ -1,0 +1,28 @@
+<section class="products_area">
+    <div class="container">
+        <div class="row">
+           <div class="col-md-12 col-sm-12 col-xs-12">
+               <div class="search_form">
+                   <input type="text" class="form-control" placeholder="Search Your T-shirts..." ng-model="searchKey">
+               </div>
+           </div>
+            <div class="col-md-4 col-sm-4 col-md-offset-0 col-sm-offset-0 col-xs-offset-2 col-xs-8 product" ng-repeat="product in products | filter:searchKey">
+                <div class="single_product">
+                    <img src="img/{{product.img}}">
+                    <h2>{{product.name}}</h2> 
+
+                    <div class="collapse details{{product.id}}">
+                        <p>{{product.desc}}<br>
+                        <strong>Color:</strong><span> {{product.color}}</span><br> 
+                        <strong>Size:</strong><span> {{product.size}}</span><br>
+                        <strong>Status:</strong><span> {{product.status}}</span><br>
+                        <strong>Price:</strong><span> ${{product.price}}</span>
+                        </p>
+                    </div>
+                    <a class="see_details" data-toggle="collapse" data-target=".details{{product.id}}" >See Details</a>
+                    <a ng-click="addToCart(product)">Add To Cart</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section> 

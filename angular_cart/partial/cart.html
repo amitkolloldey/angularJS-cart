@@ -1,0 +1,28 @@
+
+<section class="products_area" >
+    <div class="container">
+        <div class="row">
+           <div class="col-md-12">
+               <div class="text-center cart_text">
+                   <p>Add Yours Items To The Cart From <a href="#/products">Store</a></p>
+               </div>
+           </div>
+            <div class="col-md-4 col-sm-4 col-md-offset-0 col-sm-offset-0 col-xs-offset-2 col-xs-8 product" ng-repeat="product in cart">
+                <div class="single_product">
+                    <img src="img/{{product.img}}">
+                    <h2>{{product.name}}</h2> 
+                    <div class="collapse details{{product.id}}">
+                        <p>{{product.desc}}<br>
+                        <strong>Color:</strong><span> {{product.color}}</span><br> 
+                        <strong>Size:</strong><span> {{product.size}}</span><br>
+                        <strong>Status:</strong><span> {{product.status}}</span><br>
+                        <strong>Price:</strong><span> ${{product.price}}</span>
+                        </p>
+                    </div>
+                    <a class="see_details" data-toggle="collapse" data-target=".details{{product.id}}" >See Details</a>
+                    <a ng-click="buyNow(product)">Buy Now</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
